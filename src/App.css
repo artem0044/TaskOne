@@ -1,9 +1,10 @@
 .App {
   text-align: center;
+  padding: 10px;
 }
 
 .App-logo {
-  height: 40vmin;
+  height        : 40vmin;
   pointer-events: none;
 }
 
@@ -15,23 +16,53 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  min-height      : 100vh;
+  display         : flex;
+  flex-direction  : column;
+  align-items     : center;
+  justify-content : center;
+  font-size       : calc(10px + 2vmin);
+  color           : white;
 }
 
 .App-link {
   color: #61dafb;
 }
 
+.repo-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.repo-list__item {
+  margin-top: 10px;
+  border: 1px solid grey;
+  padding: 10px;
+}
+
+.primary-button {
+  border       : none;
+  width        : 50px;
+  height       : 40px;
+  border-radius: 10px;
+  margin-left  : 20px;
+  background-color: aquamarine;
+  cursor: pointer;
+}
+
+.search-repo-field{
+  height: 30px;
+}
+
+
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
